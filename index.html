@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>MyPortfolio</title>
+    <link rel="icon" href="ico3.png" type="image/png">
+    <link rel="stylesheet" href="./MyPortfolio.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+  
+
+   
+</head>
+<body>
+    <header class="hea-1">
+        <div class="logo">
+            <h1>Ankit Saini</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="./AboutMe.html">About Me</a></li>
+                <li><a href="./skill.html">Skills</a></li>
+                <li><a href="./Projects.html">Projects</a></li>
+                <li><a href="./Resume.html">Resume</a></li>
+                <li><a href="./AdminLogin.html">Admin Login</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+    <section id="hero">
+        <img src="./Logo.webp" height="20%" width="20%" class="rotate">
+        <h1>Ankit Saini</h1>
+        <p>Welcome to my professional portfolio!</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="photo">
+                <img src="./Mypic.jpeg" alt="Ankit Saini Photo">
+            </div>
+            <div>
+                <p>Hi, I'm Ankit Saini, a  B.Tech in Computer Science and Engineering (CSE). I specialize in Java Web Developer. With several years of experience, I have developed skills in web site. My passion lies in creating high-quality projects that make a difference.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="s-1">Skills</h2>
+        <marquee width="100%" behavior="alternate" bgcolor="pink">
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Java</li>
+            <li>GitHub</li>
+            <li>PhotoShop 7.0</li>
+            <li>MS Office</li>
+        </ul>
+    </marquee>
+    </section>
+
+    <section id="projects" style="background-image: url('img1.jpg'); background-size: cover; padding: 200px; color: white;">
+        <h2 class="p-1">Projects</h2>
+        <div class="projects-container">
+            <div class="project-1" id="project-1">
+                <h3>Project 1</h3>
+                
+            </div>
+            <div class="project-2" id="project-2">
+                <h3>Project 2</h3>
+                
+            </div>
+            <div class="project-3" id="project-3">
+                <h3>Project 3</h3>
+                
+            </div>
+            <div class="project-4" id="project-4">
+                <h3>Project 4</h3>
+                
+            </div>
+            <div class="project-5" id="project-5">
+                <h3>Project 5</h3>
+                
+            </div>
+        </div>
+        <button id="add-project-btn" onclick="window.location.href='./Projects.html'">More Project</button>
+    </section>
+
+    <section id="contact">
+        <div class="contact-section">
+            <div class="container">
+                <h2>Enquiry Us</h2>
+                <p>Some for asking for help or sending a query message.</p>
+
+                <form method="POST" id="form" class="contact-form">
+
+                    <input type="hidden" name="access_key" value="07b99b09-ee72-45ee-97b2-a0190a23fc3d">
+                    <div class="form-group">
+                    <input type="text" name="name" required placeholder="Your Name *">
+                    </div>
+                    <div class="form-group">
+                    <input type="email" name="email" required placeholder="Your Email *">
+                </div>
+                    <div class="form-group">
+                    <input type="tel" name="phone" required placeholder="Your phone *">
+                </div>
+                    <div class="form-group">
+                    <input type="text" name="country" required placeholder="Your Contry *">
+                </div>
+                    <div class="form-group full-width">
+                    <textarea name="message" required rows="8" placeholder="Message"></textarea>
+                </div>
+                    <div class="form-group">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                </div>
+                
+                    <button type="submit" class="button-1">Submit Form</button>
+                
+                    <div id="result"></div>
+                
+                </form>
+            </div>
+            <div class="social-icons">
+                <a href="https://x.com/Er_ANKIT_SAINI"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.instagram.com/ankit.saini.sekhawati/profilecard/?igsh=Y3B1ZWVoazY4NDR6"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/ankit-kumar-saini-2961a4275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+                <a href="https://wa.me/916376188144"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.threads.net/@ankit.saini.sekhawati"><i class="bi bi-threads"></i></a>
+                <a href="https://github.com/ANKITSAINI498"><i class="bi bi-github"></i></a>
+            </div>
+        </div>
+    </section>
+</div>
+
+    <footer>
+        <p>&copy; 2024 Ankit Saini. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./MyPortfolio.js"></script>
+    <script src="./Gmail.js"></script>
+    
+</body>
+</html>
+<!---->

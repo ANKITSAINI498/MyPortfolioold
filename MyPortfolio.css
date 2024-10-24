@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+    
+}
+
+header {
+    background-color: #080471;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.content {
+    padding-top: 65px;
+}
+
+.logo h1 {
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    animation: fadeInLogo 2s ease-in-out;
+}
+
+@keyframes fadeInLogo {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+ 
+}
+
+nav ul li {
+    margin: 0 20px;
+    
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+    
+}
+
+nav ul li a:hover {
+    color: #060606;
+    position: relative;
+    padding: 0.5rem 0.75rem;
+    font-size: 18px;
+    font-weight: 600;
+    border: solid 10px white;
+    background-color: white;
+    border-radius: 5px;
+    transition: color 0.25s;
+    
+   
+    
+}
+img{
+    border-radius: 100%;
+    border: solid 5px white;
+}
+#hero {
+    background-color: rgb(0, 0, 0);
+    padding: 30px 10px;
+    text-align: center;
+    color: white;
+    perspective: 1000px;
+}
+
+#hero h1 {
+    font-size: 50px;
+    animation: slideIn 2.5s ease-in-out;
+    font-family: Lucida Calligraphy;  
+    font-size: 1cm;  
+    color: rgb(254, 254, 103);  
+    text-shadow: 7px 10px 9px rgb(253, 37, 30);  
+        
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.rotate {
+    width: 300px;
+    animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+#about {
+    padding: 5px 5px;
+    text-align: center;
+    background-color: white;
+    color: #0355f9;
+    border: yellow;
+    border: solid 20px;
+    border-image: repeating-linear-gradient(to bottom right, #33475b, #0033CC, #FF77CC, rgb(255, 122, 89)) 20;
+    
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+p{
+    color: #030202;
+}
+
+.photo img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 40px;
+    animation: fadeInPhoto 5s ease-in-out;
+}
+
+@keyframes fadeInPhoto {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#skills {
+    text-align: center;
+    padding: 10px;
+    background-color: #010101;
+
+}
+#skills ul{
+    margin-top: 7px;
+    
+}
+ul{
+    display: flex;
+    margin-bottom: 10px;
+    color:#030202;
+    
+    
+}
+li{
+    margin-left: 20PX;
+    margin-right: 20px;
+    font-size:large;
+    border-radius: 10px;
+    
+
+}
+.s-1{
+    color: rgb(207, 235, 20);
+}
+.p-1{
+    color: #030202;
+    border: white;
+    border: solid 5px;
+    background-color: #e8fa44;
+}
+
+#projects {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+    
+}
+
+
+.project {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    color: #2c3e50;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInProject 2s ease-in-out;
+}
+
+.project-1 {
+    width: 200px;
+    height: 200px;
+    background-image: url(./bikeshoping.png);
+    background-size: cover;
+    color: #2c3e50;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInProject 2s ease-in-out;
+}
+.project-2{
+    width: 200px;
+    height: 200px;
+    background-image: url(./photographer.jpeg);
+    background-size: cover;
+    color: #2c3e50;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInProject 2s ease-in-out;
+}
+.project-3 {
+    width: 200px;
+    height: 200px;
+    background-image: url(./registration-form.png);
+    background-size: cover;
+    color: #2c3e50;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInProject 2s ease-in-out;
+}
+.project-4 {
+    width: 200px;
+    height: 200px;
+    background-image: url(./My\ Personal\ Blog.jpeg);
+    color: #2c3e50;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInProject 2s ease-in-out;
+}
+.project-5 {
+    width: 200px;
+    height: 200px;
+    background-image: url(./coming-soon.webp);
+    background-size: cover;
+    color: #2c3e50;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInProject 2s ease-in-out;
+}
+
+
+
+
+
+@keyframes fadeInProject {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#add-project-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #010101;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    font-size: large;
+}
+
+#add-project-btn:hover {
+    background-color: #1e06ba;
+}
+
+.contact-section {
+    background-color: #030202;
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+}
+.contact-section:hover{
+    filter:drop-shadow(0 0 50px rgb(255, 93, 56));
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #3d20e6;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 30px;
+    color: #ccc;
+    
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.form-group {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.form-group.full-width {
+    width: 100%;
+}
+.form-group:hover{
+    filter:drop-shadow(0 0 10px rgb(238, 254, 57));
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    font-size: 16px;
+}
+.country{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+}
+
+.button-1 {
+    background-color: #2980b9;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    
+}
+
+.button-1:hover {
+    background-color: #3434db;
+    display: block;
+    filter:drop-shadow(0 0 10px rgb(238, 254, 57));
+}
+
+.social-icons {
+    margin-top: 40px;
+}
+
+.social-icons a {
+    color: rgb(247, 11, 11);
+    font-size: 40px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #e8fa44;
+    filter:drop-shadow(0 0 20px rgb(238, 254, 57));
+}
+
+@media (max-width: 768px) {
+    .form-group {
+        width: 100%;
+    }
+    .p{
+        font-size: medium;
+    }
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
